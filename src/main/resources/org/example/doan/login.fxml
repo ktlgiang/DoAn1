@@ -6,28 +6,37 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
-   <right>
-      <AnchorPane prefHeight="450.0" prefWidth="269.0" style="-fx-background-color: pink;" BorderPane.alignment="CENTER">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.doan.LoginApplication">
+   <left>
+      <AnchorPane prefHeight="450.0" prefWidth="232.0" style="-fx-background-color: PINK;" BorderPane.alignment="CENTER">
          <children>
-            <FontAwesomeIcon fill="#175315" glyphName="USER" layoutX="111.0" layoutY="54.0" size="3EM" wrappingWidth="30.685739517211914" />
-            <Label alignment="TOP_CENTER" layoutX="21.0" layoutY="67.0" prefHeight="22.0" prefWidth="212.0" text="LOGIN" textFill="#dc3434">
+            <FontAwesomeIcon fill="#383717" glyphName="DESKTOP" layoutX="53.0" layoutY="227.0" size="10EM" wrappingWidth="15.257166862487793" />
+            <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="46.0" layoutY="252.0" prefHeight="18.0" prefWidth="153.0" text="WELL COME">
+               <font>
+                  <Font name="Britannic Bold" size="24.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="450.0" prefWidth="269.0" style="-fx-background-color: #F0F8FF;" BorderPane.alignment="CENTER">
+         <children>
+            <FontAwesomeIcon fill="#0598ff" glyphName="USER" layoutX="112.0" layoutY="55.0" size="4em" wrappingWidth="30.685739517211914" />
+            <Label alignment="TOP_CENTER" layoutX="21.0" layoutY="70.0" prefHeight="22.0" prefWidth="212.0" text="Sign In Account" textFill="#0598ff">
                <font>
                   <Font name="Arial Bold" size="18.0" />
                </font>
             </Label>
-            <Button layoutX="11.0" layoutY="264.0" mnemonicParsing="false" style="-fx-background-color: #0598ff;" text="Login for User" textFill="#202126">
+            <Button layoutX="11.0" layoutY="264.0" mnemonicParsing="false" style="-fx-background-color: #0598ff;" text="Login for User" textFill="WHITE">
                <font>
                   <Font name="Bell MT Bold" size="14.0" />
                </font>
             </Button>
-            <Button layoutX="135.0" layoutY="264.0" mnemonicParsing="false" style="-fx-background-color: #0598ff;" text="Login for Admin">
+            <Button layoutX="135.0" layoutY="264.0" mnemonicParsing="false" style="-fx-background-color: #0598ff;" text="Login for Admin" textFill="WHITE">
                <font>
                   <Font name="Bell MT Bold" size="14.0" />
                </font>
@@ -36,9 +45,9 @@
             <FontAwesomeIcon fill="#0598ff" glyphName="KEY" layoutX="16.0" layoutY="198.0" size="1.5EM" />
             <TextField alignment="CENTER" layoutX="42.0" layoutY="120.0" prefHeight="26.0" prefWidth="182.0" promptText="User name" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
             <PasswordField alignment="CENTER" layoutX="42.0" layoutY="169.0" prefHeight="26.0" prefWidth="182.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
-            <CheckBox layoutX="42.0" layoutY="221.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="148.0" text="Show Password" />
-            <Label layoutX="72.0" layoutY="346.0" prefHeight="18.0" prefWidth="128.0" text="I dont have an account" />
-            <Button layoutX="78.0" layoutY="372.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: #0598ff;" text="Sign up">
+            <CheckBox layoutX="75.0" layoutY="216.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="118.0" text="Show Password" />
+            <Label layoutX="71.0" layoutY="372.0" prefHeight="18.0" prefWidth="128.0" text="I dont have an account" />
+            <Button layoutX="84.0" layoutY="391.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: #0598ff;" text="Sign up" textFill="WHITE">
                <font>
                   <Font name="Bell MT Bold" size="14.0" />
                </font>
@@ -46,23 +55,4 @@
          </children>
       </AnchorPane>
    </right>
-   <center>
-      <AnchorPane prefHeight="450.0" prefWidth="232.0" style="-fx-background-color: PINK;" BorderPane.alignment="CENTER">
-         <children>
-            <ImageView fitHeight="330.0" fitWidth="250.0" layoutX="-6.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../../../../../Users/ADMIN/Pictures/Screenshots/Ảnh%20chụp%20màn%20hình%20(181).png" />
-               </image>
-            </ImageView>
-            <Label layoutX="1.0" prefHeight="115.0" prefWidth="230.0" style="-fx-background-color: #0598ff;" text="WELLCOME" textFill="#01010b">
-               <font>
-                  <Font name="Bell MT Bold" size="25.0" />
-               </font>
-            </Label>
-            <FontAwesomeIcon fill="RED" glyphName="HEART" layoutX="164.0" layoutY="31.0" />
-            <FontAwesomeIcon fill="RED" glyphName="HEART" layoutX="196.0" layoutY="71.0" />
-            <FontAwesomeIcon fill="RED" glyphName="HEART" layoutX="152.0" layoutY="100.0" />
-         </children>
-      </AnchorPane>
-   </center>
 </BorderPane>

@@ -12,7 +12,7 @@ public class SignupApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("signup.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 500, 430);
+        Scene scene = new Scene(fxmlLoader.load(), 304, 502);
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
