@@ -59,7 +59,7 @@
                                 <Button layoutX="41.0" layoutY="258.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="94.0" style="-fx-background-color: #008CBA; -fx-text-fill: white;" text="OPEN FILE" />
                                 <FontAwesomeIcon fill="#484869" glyphName="PLUS" layoutX="15.0" layoutY="228.0" size="2EM" />
                                 <FontAwesomeIcon fill="#484869" glyphName="FOLDER" layoutX="13.0" layoutY="282.0" size="2EM" />
-                        <Button layoutX="41.0" layoutY="314.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="94.0" style="-fx-background-color: YELLOW;" text="FILE BROWSE" />
+                        <Button layoutX="41.0" layoutY="314.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="94.0" style="-fx-background-color: YELLOW;" text="FILE BROWSER" />
                         <Button layoutX="41.0" layoutY="364.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="93.0" style="-fx-background-color: ORANGE;" text="DELETE USER" />
                         <FontAwesomeIcon fill="#484869" glyphName="PLUS" layoutX="16.0" layoutY="331.0" size="2EM" wrappingWidth="16.0" />
                         <FontAwesomeIcon fill="#484869" glyphName="REMOVE" layoutX="15.0" layoutY="387.0" size="2EM" text="" />
