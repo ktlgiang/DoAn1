@@ -15,7 +15,7 @@
       <AnchorPane prefHeight="450.0" prefWidth="232.0" style="-fx-background-color: PINK;" BorderPane.alignment="CENTER">
          <children>
             <FontAwesomeIcon fill="#383717" glyphName="DESKTOP" layoutX="53.0" layoutY="227.0" size="10EM" wrappingWidth="15.257166862487793" />
-            <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="46.0" layoutY="252.0" prefHeight="18.0" prefWidth="153.0" text="WELL COME">
+            <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="46.0" layoutY="252.0" prefHeight="18.0" prefWidth="153.0" text="WELCOME">
                <font>
                   <Font name="Britannic Bold" size="24.0" />
                </font>
