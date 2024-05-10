@@ -31,12 +31,7 @@
                   <Font name="Arial Bold" size="18.0" />
                </font>
             </Label>
-            <Button layoutX="11.0" layoutY="264.0" mnemonicParsing="false" style="-fx-background-color: #0598ff;" text="Login for User" textFill="WHITE">
-               <font>
-                  <Font name="Bell MT Bold" size="14.0" />
-               </font>
-            </Button>
-            <Button layoutX="135.0" layoutY="264.0" mnemonicParsing="false" style="-fx-background-color: #0598ff;" text="Login for Admin" textFill="WHITE">
+            <Button layoutX="42.0" layoutY="285.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="179.0" style="-fx-background-color: #0598ff;" text="Sign In" textFill="WHITE">
                <font>
                   <Font name="Bell MT Bold" size="14.0" />
                </font>
@@ -45,9 +40,9 @@
             <FontAwesomeIcon fill="#0598ff" glyphName="KEY" layoutX="16.0" layoutY="198.0" size="1.5EM" />
             <TextField alignment="CENTER" layoutX="42.0" layoutY="120.0" prefHeight="26.0" prefWidth="182.0" promptText="User name" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
             <PasswordField alignment="CENTER" layoutX="42.0" layoutY="169.0" prefHeight="26.0" prefWidth="182.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
-            <CheckBox layoutX="75.0" layoutY="216.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="118.0" text="Show Password" />
+            <CheckBox layoutX="42.0" layoutY="231.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="181.0" text="Show Password" />
             <Label layoutX="71.0" layoutY="372.0" prefHeight="18.0" prefWidth="128.0" text="I dont have an account" />
-            <Button layoutX="84.0" layoutY="391.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: #0598ff;" text="Sign up" textFill="WHITE">
+            <Button layoutX="42.0" layoutY="391.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="175.0" style="-fx-background-color: #0598ff;" text="Sign up" textFill="WHITE">
                <font>
                   <Font name="Bell MT Bold" size="14.0" />
                </font>
