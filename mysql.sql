@@ -7,7 +7,7 @@ CREATE TABLE Người_dùng (
     Mã_người_dùng INT AUTO_INCREMENT PRIMARY KEY,
     Tên_người_dùng NVARCHAR(50),
     Mật_khẩu VARCHAR(50),
-    Email VARCHAR(100) UNIQUE CHECK (Email REGEXP '^[a-zA-Z0-9._%+-]+@gmail\.com$'),
+    Email VARCHAR(100) UNIQUE CHECK (Email REGEXP '^[a-zA-Z0-9._%+-]+@gmail.com$'),
     Vai_trò VARCHAR(50)
 );
 
