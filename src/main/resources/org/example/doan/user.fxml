@@ -6,11 +6,10 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<?import javafx.scene.layout.StackPane?>
-<?import javafx.scene.layout.HBox?>
 <AnchorPane prefHeight="400.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.doan.UserApplication">
     <children>
         <BorderPane prefHeight="600.0" prefWidth="1000.0">
@@ -30,22 +29,21 @@
                                 <Line endX="100.0" layoutX="798.0" layoutY="21.0" startX="-100.0" />
                             </children>
                         </AnchorPane>
-                        <Button layoutY="53.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="150.0" style="-fx-background-color: #007FFF; -fx-text-fill: white;" text="HTML" />
-                        <Button layoutX="150.0" layoutY="53.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="150.0" style="-fx-background-color: #FFA500; -fx-text-fill: white;" text="CSS" />
-                        <Button layoutX="300.0" layoutY="53.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="150.0" style="-fx-background-color: #FF0000; -fx-text-fill: white;" text="C++" />
-                        <Button layoutX="450.0" layoutY="53.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="150.0" style="-fx-background-color: #800080; -fx-text-fill: white;" text="Bootstrap" />
-                        <Button layoutX="600.0" layoutY="53.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="150.0" style="-fx-background-color: #3CB371; -fx-text-fill: white;" text="Java" />
-                        <Label layoutX="909.0" layoutY="61.0" text="HI, NAME">
+                        <Button layoutY="53.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="150.0" style="-fx-background-color: #007FFF; -fx-text-fill: white;" text="OOP" />
+                        <Button layoutX="182.0" layoutY="53.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="150.0" style="-fx-background-color: #FFA500; -fx-text-fill: white;" text="HTML" />
+                        <Button layoutX="363.0" layoutY="53.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="150.0" style="-fx-background-color: #FF0000; -fx-text-fill: white;" text="DSA" />
+                        <Button layoutX="545.0" layoutY="53.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="150.0" style="-fx-background-color: #800080; -fx-text-fill: white;" text="JS" />
+                        <Button layoutX="727.0" layoutY="53.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="150.0" style="-fx-background-color: #3CB371; -fx-text-fill: white;" text="IOT" />
+                        <Label layoutX="909.0" layoutY="61.0">
                             <font>
                                 <Font size="18.0" />
                             </font>
                         </Label>
-                        <Button layoutX="750.0" layoutY="53.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="150.0" style="-fx-background-color: #800000; -fx-text-fill: white;" text="SQL" />
                     </children>
                 </AnchorPane>
             </top>
             <left>
-                <AnchorPane prefHeight="484.0" prefWidth="162.0" style="-fx-background-color: transparent;" BorderPane.alignment="CENTER">
+                <AnchorPane id="Left" prefHeight="484.0" prefWidth="162.0" style="-fx-background-color: transparent;" BorderPane.alignment="CENTER">
                     <children>
                         <AnchorPane layoutX="5.0" layoutY="5.0" prefHeight="493.0" prefWidth="151.0" style="-fx-background-color: #ffe4e1; -fx-border-width: 1px; -fx-border-radius: 10px; -fx-background-radius: 10px;">
                             <children>
@@ -71,7 +69,7 @@
                         <AnchorPane fx:id="DocumentPane" layoutX="12.0" layoutY="50.0" prefHeight="446.0" prefWidth="615.0" style="-fx-background-color: WHITE; -fx-border-radius: 10px; -fx-background-radius: 10px; -fx-border-width: 2px; -fx-border-color: #808080;" />
                         <AnchorPane fx:id="ComentPane" layoutX="636.0" layoutY="49.0" prefHeight="448.0" prefWidth="191.0" style="-fx-background-color: WHITE; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-width: 2px; -fx-border-color: #808080;">
                             <children>
-                                <HBox spacing="5.0" layoutX="14.0" layoutY="382.0">
+                                <HBox layoutX="14.0" layoutY="382.0" spacing="5.0">
                                     <TextField fx:id="commentTextField" promptText="Write a comment..." HBox.hgrow="ALWAYS" />
                                     <Button>
                                         <graphic>

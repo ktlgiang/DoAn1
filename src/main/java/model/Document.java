@@ -1,5 +1,7 @@
 
 package model;
+import org.w3c.dom.DocumentType;
+
 import java.util.Date;
 import java.util.List;
 
@@ -14,39 +16,41 @@ import javax.persistence.Table;
 @Entity
 @Table(name="Tài_liệu")
 public class Document {
-	@Id
-	@GeneratedValue
-	@Column(name="Mã_tài_liệu")
+    @Id
+    @GeneratedValue
+    @Column(name = "Mã_tài_liệu")
     private int docId;
-	@Column(name="Tên_tài_liệu")
+    @Column(name = "Tên_tài_liệu")
     private String documentName;
-	@Column(name="Mô_tả")
+    @Column(name = "Mô_tả")
     private String description;
-	@Column(name="Ngày_tải")
+    @Column(name = "Ngày_tải")
     private Date uploadDateTime;
-	@Column(name="Đường_dẫn")
+    @Column(name = "Đường_dẫn")
     private String filePath;
-	@Column(name="Tác_giả")
+    @Column(name = "Tác_giả")
     private String author;
-	@Column(name="Trạng_thá")
+    @Column(name = "Trạng_thá")
     private String fileStatus;
-	@Column(name="Mã_loại_tài_liệu")
-	private int documentTypeId;
-	@ManyToOne
-    @JoinColumn(name="Mã_loại_tài_liệu", insertable = false, updatable = false) 
+    @Column(name = "Mã_loại_tài_liệu")
+    private int documentTypeId;
+    @ManyToOne
+    @JoinColumn(name = "Mã_loại_tài_liệu", insertable = false, updatable = false)
     private Document_Type document_Type;
-	@Column(name="Mã_môn_học")
+    @Column(name = "Mã_môn_học")
     private String subjectId;
-	@Column(name="Mã_người_dùng")
-	private int userId;
-	@ManyToOne
-    @JoinColumn(name="Mã_người_dùng", insertable = false, updatable = false) 
+    @Column(name = "Mã_người_dùng")
+    private int userId;
+    @ManyToOne
+    @JoinColumn(name = "Mã_người_dùng", insertable = false, updatable = false)
     private User user;
-	@OneToMany(mappedBy = "document_comment")
-	private List<Comment>List_Comment;
+    @OneToMany(mappedBy = "document_comment")
+    private List<Comment> List_Comment;
+
     // Constructor
     public Document() {
     }
+
     public Document(String documentName, String description, Date uploadDateTime, String filePath, String author, String fileStatus, int documentTypeId, String subjectId, int userId) {
         this.documentName = documentName;
         this.description = description;
@@ -103,11 +107,11 @@ public class Document {
     public void setUploadDateTime(Date uploadDateTime) {
         this.uploadDateTime = uploadDateTime;
     }
-  public java.sql.Date getDob() {
+
+    public java.sql.Date getDob() {
         return new java.sql.Date(uploadDateTime.getTime());
     }
 
-  
 
     public String getFilePath() {
 
@@ -157,14 +161,15 @@ public class Document {
     public void setUserId(int userId) {
         this.userId = userId;
     }
-	public Document_Type getDocument_Type() {
-		return document_Type;
-	}
-	public void setDocument_Type(Document_Type document_Type) {
-		this.document_Type = document_Type;
-	}
+
+    public Document_Type getDocument_Type() {
+        return document_Type;
+    }
+
+    public void setDocument_Type(Document_Type document_Type) {
+        this.document_Type = document_Type;
+    }
 
 
-  
 }
 

@@ -1,4 +1,4 @@
-
+DROP DATABASE DACS1_1;
 CREATE DATABASE DACS1_1;
 USE DACS1_1;
 
@@ -81,14 +81,14 @@ INSERT INTO Môn_học (Mã_môn_học, Tên_môn_học) VALUES
 
 
 -- Thêm dữ liệu vào bảng Người_dùng
-INSERT INTO Người_dùng (Tên_người_dùng,Email, Mật_khẩu, Vai_trò)
+INSERT INTO Người_dùng (Email, Mật_khẩu, Vai_trò)
 VALUES 
-('Nguoi dung 1','managerIOT@gmail.com', '123', 'admin'),
-('Nguoi dung 2','managerPRJ@gmail.com', '123', 'admin'),
-('Nguoi dung 3','managerMAS@gmail.com', '123', 'admin'),
-('Nguoi dung 4','managerJPD@gmail.com', '123', 'admin'),
-('Nguoi dung 5','managerSWE@gmail.com', '123', 'admin'),
-('Nguoi dung 6','user1@gmail.com','123', 'user');
+('managerIOT@gmail.com', '123', 'OOP'),
+('managerPRJ@gmail.com', '123', 'HTML'),
+('managerMAS@gmail.com', '123', 'DSA'),
+('managerJPD@gmail.com', '123', 'JS'),
+('managerSWE@gmail.com', '123', 'IOT'),
+('user1@gmail.com','123', 'user');
 
 -- Thêm dữ liệu vào bảng Người_dùng_Môn_học
 INSERT INTO Người_dùng_Môn_học (Mã_người_dùng, Mã_môn_học)
@@ -120,4 +120,4 @@ SELECT * FROM Môn_học;
 SELECT * FROM Loại_tài_liệu;
 SELECT * FROM Người_dùng;
 SELECT * FROM Người_dùng_Môn_học;
-SELECT * FROM Bình_luận; 
+SELECT * FROM Bình_luận;
