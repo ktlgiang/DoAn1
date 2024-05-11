@@ -19,7 +19,7 @@ public class HibernateUtil {
             configuration.setProperty("hibernate.connection.driver_class", "com.mysql.jdbc.Driver");
             configuration.setProperty("hibernate.connection.url", "jdbc:mysql://localhost:3306/dacs1_1");
             configuration.setProperty("hibernate.connection.username", "root");
-            configuration.setProperty("hibernate.connection.password", "");
+            configuration.setProperty("hibernate.connection.password", "123456");
 
             // Set hbm2ddl.auto to update
             configuration.setProperty("hibernate.hbm2ddl.auto", "update");
@@ -55,4 +55,3 @@ public class HibernateUtil {
         getSessionFactory().close();
     }
 }
-

@@ -4,7 +4,14 @@ module org.example.doan {
 
     requires com.dlsc.formsfx;
     requires org.kordamp.bootstrapfx.core;
-
+    requires java.persistence;
+    requires org.hibernate.orm.core;
+    requires java.sql.rowset;
     opens org.example.doan to javafx.fxml;
     exports org.example.doan;
+    exports org.example.doan.Controller;
+    opens org.example.doan.Controller to javafx.fxml;
+    opens model;
+
+
 }
