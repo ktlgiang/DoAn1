@@ -29,11 +29,11 @@
                                 <Line endX="100.0" layoutX="798.0" layoutY="21.0" startX="-100.0" />
                             </children>
                         </AnchorPane>
-                        <Button layoutY="53.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="150.0" style="-fx-background-color: #007FFF; -fx-text-fill: white;" text="OOP" />
-                        <Button layoutX="180.0" layoutY="53.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="150.0" style="-fx-background-color: #FFA500; -fx-text-fill: white;" text="HTML" />
-                        <Button layoutX="367.0" layoutY="53.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="150.0" style="-fx-background-color: #FF0000; -fx-text-fill: white;" text="DSA" />
-                        <Button layoutX="551.0" layoutY="53.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="150.0" style="-fx-background-color: #800080; -fx-text-fill: white;" text="JS" />
-                        <Button layoutX="732.0" layoutY="53.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="150.0" style="-fx-background-color: #3CB371; -fx-text-fill: white;" text="IOT" />
+                        <Button id='oopButton' layoutY="53.0" mnemonicParsing="false" onAction="#handleShowOOPDocuments" prefHeight="43.0" prefWidth="150.0" style="-fx-background-color: #007FFF; -fx-text-fill: white;" text="OOP" />
+                        <Button id='htmlButton'  layoutX="180.0" layoutY="53.0" mnemonicParsing="false" onAction="#handleShowHTMLDocuments" prefHeight="43.0" prefWidth="150.0" style="-fx-background-color: #FFA500; -fx-text-fill: white;" text="HTML" />
+                        <Button id='dsaButton'  layoutX="367.0" layoutY="53.0" mnemonicParsing="false" onAction="#handleShowDSADocuments" prefHeight="43.0" prefWidth="150.0" style="-fx-background-color: #FF0000; -fx-text-fill: white;" text="DSA" />
+                        <Button id='jsButton' layoutX="551.0" layoutY="53.0" mnemonicParsing="false" onAction="#handleShowJSDocuments" prefHeight="43.0" prefWidth="150.0" style="-fx-background-color: #800080; -fx-text-fill: white;" text="JS" />
+                        <Button id='iotButton' layoutX="732.0" layoutY="53.0" mnemonicParsing="false" onAction="#handleShowIOTDocuments" prefHeight="43.0" prefWidth="150.0" style="-fx-background-color: #3CB371; -fx-text-fill: white;" text="IOT" />
                         <Label layoutX="909.0" layoutY="61.0">
                             <font>
                                 <Font size="18.0" />
@@ -84,9 +84,9 @@
                             </children>
 
                         </AnchorPane>
-                        <TextField alignment="CENTER" layoutX="194.0" layoutY="14.0" prefHeight="26.0" prefWidth="402.0" />
+                        <TextField fx:id="searchTextField" alignment="CENTER" layoutX="194.0" layoutY="14.0" prefHeight="26.0" prefWidth="402.0" />
                         <FontAwesomeIcon glyphName="SEARCH" layoutX="203.0" layoutY="31.0" />
-                        <Button layoutX="543.0" layoutY="14.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="68.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" text="SEARCH" />
+                        <Button layoutX="543.0" layoutY="14.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="68.0" onAction="#handleSearchButton" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" text="SEARCH" />
                     </children>
                 </AnchorPane>
             </center>
