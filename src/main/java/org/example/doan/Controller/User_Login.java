@@ -15,6 +15,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import model.User;
+import org.example.doan.Controller.UserController;
 
 import java.io.IOException;
 
@@ -37,6 +38,9 @@ public class User_Login {
     @FXML
     private CheckBox showPasswordCheckBox;
 
+    @FXML
+    private Label Load_username;
+
 
     @FXML
     void login(ActionEvent event) {
@@ -55,6 +59,8 @@ public class User_Login {
                 showAlert("Thành công", "Đăng nhập thành công với quyền quản trị");
                 goToAdminPage(event);
             } else {
+                // Hiển thị tên người dùng trên trang người dùng
+                handleLogin(user.getUserName());
                 showAlert("Thành công", "Đăng nhập thành công với quyền người dùng");
                 goToUserPage(event);
             }
@@ -62,6 +68,12 @@ public class User_Login {
             showAlert("Lỗi", "Email hoặc mật khẩu không hợp lệ");
         }
     }
+
+    // Phương thức để hiển thị tên người dùng trên trang người dùng
+    public void handleLogin(String username) {
+        Load_username.setText(username);
+    }
+
     private void goToAdminPage(ActionEvent event) {
         try {
             // Load file FXML của trang admin

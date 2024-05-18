@@ -1,4 +1,3 @@
-
 package model;
 
 import org.hibernate.Session;
@@ -35,8 +34,7 @@ public class User {
     @OneToMany(mappedBy = "user_comment")
     private List<Comment> List_Comment;
 
-    public User() {
-    }
+    public User() {}
 
     public User(String email, String userName) {
         this.email = email;
@@ -112,10 +110,8 @@ public class User {
         try (Session session = sessionFactory.openSession()) {
             session.beginTransaction();
             Query<User> query = session.createQuery("FROM User WHERE email=:email AND password=:password", User.class);
-            // lấy dữ liệu eamil / passwword truyền vào
             query.setParameter("email", email);
             query.setParameter("password", password);
-            //chỉ lấy 1 kết quả,nếu tồn tại 2, 3 taif khoản thì trả về null
             User user = query.uniqueResult();
             session.getTransaction().commit();
             return user;
@@ -124,5 +120,36 @@ public class User {
         }
         return null;
     }
-}
 
+    // Method to get all users with role "user"
+    public static List<User> getAllUsersWithRoleUser() {
+        SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
+        try (Session session = sessionFactory.openSession()) {
+            session.beginTransaction();
+            Query<User> query = session.createQuery("FROM User WHERE user_role = 'user'", User.class);
+            List<User> users = query.getResultList();
+            session.getTransaction().commit();
+            return users;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    // Method to delete a user by ID
+    public static boolean deleteUserById(int userId) {
+        SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
+        try (Session session = sessionFactory.openSession()) {
+            session.beginTransaction();
+            User user = session.get(User.class, userId);
+            if (user != null) {
+                session.delete(user);
+                session.getTransaction().commit();
+                return true;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+}

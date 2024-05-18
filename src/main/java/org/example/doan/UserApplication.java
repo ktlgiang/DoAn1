@@ -10,7 +10,7 @@ public class UserApplication extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("user.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(UserApplication.class.getResource("user.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1005, 650);
         stage.setScene(scene);
         stage.setResizable(false);

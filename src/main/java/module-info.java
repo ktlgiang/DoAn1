@@ -7,6 +7,7 @@ module org.example.doan {
     requires java.persistence;
     requires org.hibernate.orm.core;
     requires java.sql.rowset;
+    requires java.desktop;
     opens org.example.doan to javafx.fxml;
     exports org.example.doan;
     exports org.example.doan.Controller;

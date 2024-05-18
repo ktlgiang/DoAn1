@@ -9,6 +9,7 @@ import java.io.IOException;
 
 public class AdminApplication extends Application {
 
+
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("admin.fxml"));
@@ -17,4 +18,5 @@ public class AdminApplication extends Application {
         stage.setResizable(false);
         stage.show();
     }
+
 }

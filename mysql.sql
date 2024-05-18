@@ -83,12 +83,12 @@ INSERT INTO Môn_học (Mã_môn_học, Tên_môn_học) VALUES
 -- Thêm dữ liệu vào bảng Người_dùng
 INSERT INTO Người_dùng (Email, Mật_khẩu, Vai_trò)
 VALUES 
-('managerIOT@gmail.com', '123', 'OOP'),
-('managerPRJ@gmail.com', '123', 'HTML'),
-('managerMAS@gmail.com', '123', 'DSA'),
-('managerJPD@gmail.com', '123', 'JS'),
-('managerSWE@gmail.com', '123', 'IOT'),
-('user1@gmail.com','123', 'user');
+('giang',managerIOT@gmail.com', '123', 'OOP'),
+('vy',managerPRJ@gmail.com', '123', 'HTML'),
+('xíu','managerMAS@gmail.com', '123', 'DSA'),
+('hùng','managerJPD@gmail.com', '123', 'JS'),
+('anh','managerSWE@gmail.com', '123', 'IOT'),
+('nguyen','user1@gmail.com','123', 'user');
 
 -- Thêm dữ liệu vào bảng Người_dùng_Môn_học
 INSERT INTO Người_dùng_Môn_học (Mã_người_dùng, Mã_môn_học)

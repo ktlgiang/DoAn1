@@ -46,7 +46,7 @@
             </Button>
 
             <!-- New Label -->
-            <Label fx:id="messageLabel" layoutX="20.0" layoutY="420.0" />
+            <Label fx:id="Load_username" layoutX="20.0" layoutY="420.0" />
          </children>
       </AnchorPane>
    </right>

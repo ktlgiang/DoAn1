@@ -35,6 +35,7 @@ public class HibernateUtil {
 
 
 
+
             // Build the ServiceRegistry
             ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
                     .applySettings(configuration.getProperties()).build();
