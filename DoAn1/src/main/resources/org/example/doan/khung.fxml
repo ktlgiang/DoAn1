@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="userpage" prefHeight="400.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <!-- Các phần tử khác ở đây -->
+
+        <!-- Khung nhỏ hình vuông để hiển thị tài liệu -->
+        <StackPane fx:id="documentContainer" layoutX="100.0" layoutY="80.0" prefHeight="164.0" prefWidth="363.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 1px;">
+            <Label fx:id="documentContent" style="-fx-wrap-text: true;" text="" />
+        </StackPane>
+    </children>
+</AnchorPane>

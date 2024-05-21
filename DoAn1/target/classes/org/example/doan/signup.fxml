@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="304.0" style="-fx-background-color: transparent;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="org.example.doan.Controller.User_Register">
+    <children>
+        <FontAwesomeIcon glyphName="USER_PLUS" layoutX="125.0" layoutY="63.0" size="4EM" />
+        <Label alignment="TOP_CENTER" layoutX="56.0" layoutY="71.0" prefHeight="18.0" prefWidth="199.0" text="Sign Up Account">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Button layoutX="57.0" layoutY="355.0" mnemonicParsing="false" onAction="#register" prefHeight="26.0" prefWidth="199.0" style="-fx-background-color: #0598ff;" text="Sign Up" textFill="WHITE" />
+        <TextField fx:id="emailTexField" layoutX="55.0" layoutY="130.0" prefHeight="35.0" prefWidth="199.0" promptText="Email Address" style="-fx-border-color: #0598ff; -fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px;" />
+        <TextField fx:id="usernameTexField" layoutX="55.0" layoutY="191.0" prefHeight="35.0" prefWidth="199.0" promptText="User name" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+        <Label alignment="TOP_CENTER" layoutX="94.0" layoutY="418.0" prefHeight="18.0" prefWidth="123.0" text="I have an account" />
+        <Button layoutX="59.0" layoutY="446.0" mnemonicParsing="false" onAction="#Sign_In" prefHeight="26.0" prefWidth="199.0" style="-fx-background-color: #0598ff;" text="Sign In Account" textFill="WHITE" />
+        <PasswordField fx:id="passwordField" layoutX="56.0" layoutY="251.0" prefHeight="35.0" prefWidth="199.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+        <PasswordField fx:id="passwordcofirm" layoutX="56.0" layoutY="306.0" prefHeight="35.0" prefWidth="199.0" promptText="Confirm Password" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #0598ff;" />
+    </children>
+</AnchorPane>

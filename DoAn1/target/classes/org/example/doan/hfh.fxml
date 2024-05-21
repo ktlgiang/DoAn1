@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.doan.Controller.UserController">
+    <children>
+        <BorderPane prefHeight="600.0" prefWidth="1000.0">
+            <top>
+                <AnchorPane prefHeight="82.0" prefWidth="978.0" style="-fx-background-color: #f0fff0; -fx-border-radius: 10px; -fx-border-width: 2px;" BorderPane.alignment="CENTER">
+                    <children>
+                        <AnchorPane prefHeight="55.0" prefWidth="1000.0" style="-fx-background-color: #f0fff0;">
+                            <children>
+                                <Label alignment="CENTER" layoutX="267.0" layoutY="10.0" prefHeight="18.0" prefWidth="446.0" text="WELCOME TO LIBRARY DOCUMENT" textAlignment="CENTER" textFill="#800000">
+                                    <font>
+                                        <Font name="Arial" size="20.0" />
+                                    </font>
+                                </Label>
+
+                                <FontAwesomeIcon fill="#000080" glyphName="USER" layoutX="934.0" layoutY="48.0" size="4EM" text="" />
+                                <Line endX="100.0" layoutX="176.0" layoutY="22.0" startX="-100.0" />
+                                <Line endX="100.0" layoutX="798.0" layoutY="21.0" startX="-100.0" />
+                            </children>
+                        </AnchorPane>
+                        <Button id="oopButton" layoutY="53.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="150.0" style="-fx-background-color: #007FFF; -fx-text-fill: white;" text="OOP" />
+                        <Button id="htmlButton" layoutX="180.0" layoutY="53.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="150.0" style="-fx-background-color: #FFA500; -fx-text-fill: white;" text="HTML" />
+                        <Button id="dsaButton" layoutX="367.0" layoutY="53.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="150.0" style="-fx-background-color: #FF0000; -fx-text-fill: white;" text="DSA" />
+                        <Button id="jsButton" layoutX="551.0" layoutY="53.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="150.0" style="-fx-background-color: #800080; -fx-text-fill: white;" text="JS" />
+                        <Button id="iotButton" layoutX="732.0" layoutY="53.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="150.0" style="-fx-background-color: #3CB371; -fx-text-fill: white;" text="IOT" />
+                        <Label layoutX="909.0" layoutY="61.0">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+            </top>
+            <left>
+                <AnchorPane prefHeight="484.0" prefWidth="162.0" style="-fx-background-color: transparent;" BorderPane.alignment="CENTER">
+                    <children>
+                        <AnchorPane layoutX="3.0" layoutY="5.0" prefHeight="493.0" prefWidth="151.0" style="-fx-background-color: #ffe4e1; -fx-border-width: 1px; -fx-border-radius: 15px; -fx-background-radius: 15px;">
+                            <children>
+                                <FontAwesomeIcon fill="NAVY" glyphName="USER_MD" layoutX="41.0" layoutY="86.0" size="7EM" />
+                                <Label alignment="CENTER" layoutX="2.0" layoutY="104.0" prefHeight="27.0" prefWidth="155.0" text="WELCOME,ADMIN">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </Label>
+                                <Line endX="59.59999084472656" layoutX="73.0" layoutY="153.0" startX="-57.19999313354492" />
+                                <Button layoutX="41.0" onAction="#uploadFile" layoutY="206.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="106.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" text="ADD FILE" />
+                                <Button layoutX="41.0" layoutY="281.0" mnemonicParsing="false" onAction="#Open" prefHeight="30.0" prefWidth="106.0" style="-fx-background-color: #008CBA; -fx-text-fill: white;" text="OPEN FILE" />
+                                <FontAwesomeIcon fill="#484869" glyphName="PLUS" layoutX="15.0" layoutY="228.0" size="2EM" />
+                                <FontAwesomeIcon fill="#484869" glyphName="FOLDER" layoutX="13.0" layoutY="282.0" size="2EM" text="" />
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </AnchorPane>
+            </left>
+            <center>
+                <AnchorPane prefHeight="495.0" prefWidth="833.0" style="-fx-background-color: #fffaf0; -fx-background-radius: 10PX;" BorderPane.alignment="CENTER">
+                    <children>
+                        <ScrollPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="191.0" AnchorPane.topAnchor="50.0">
+                            <content>
+                                <AnchorPane fx:id="DocumentPane" prefHeight="446.0" prefWidth="615.0" style="-fx-background-color: WHITE; -fx-border-radius: 10px; -fx-background-radius: 10px; -fx-border-width: 2px; -fx-border-color: #808080;" />
+                            </content>
+                        </ScrollPane>
+
+                        <AnchorPane fx:id="ComentPane" layoutX="636.0" layoutY="49.0" prefHeight="448.0" prefWidth="191.0" style="-fx-background-color: WHITE; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-width: 2px; -fx-border-color: #808080;">
+                            <children>
+                                <HBox layoutX="14.0" layoutY="382.0" spacing="5.0">
+                                    <TextField fx:id="commentTextField" promptText="Write a comment..." HBox.hgrow="ALWAYS" />
+                                    <Button>
+                                        <graphic>
+                                            <FontAwesomeIcon glyphName="SEND" />
+                                        </graphic>
+                                    </Button>
+                                </HBox>
+                            </children>
+
+                        </AnchorPane>
+                        <TextField fx:id="searchTextField" alignment="CENTER" layoutX="194.0" layoutY="14.0" prefHeight="26.0" prefWidth="402.0" />
+                        <FontAwesomeIcon glyphName="SEARCH" layoutX="203.0" layoutY="31.0" />
+                        <Button layoutX="543.0" layoutY="14.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="68.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" text="SEARCH" />
+                    </children>
+                </AnchorPane>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>
